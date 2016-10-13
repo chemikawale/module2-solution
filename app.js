@@ -18,19 +18,19 @@
     buyList.buyItem = function(itemIndex){
     ShoppingListCheckOffService.addToBoughtItem(itemIndex);
     ShoppingListCheckOffService.removeItem(itemIndex);
-    if (!ShoppingListCheckOffService.getBoughtItems().length > 0) {
-         buyList.boughtMessage =  "Nothing bought yet ";
-    }
-    if (!ShoppingListCheckOffService.getBoughtItems().length > 0) {
-         buyList.boughtMessage =  "Nothing bought yet ";
-    }else{
-
-       buyList.boughtMessage =  ""
-    }
-
-    if (!buyList.items.length > 0) {
-      buyList.emptyMessage =  "Everything is bought!";
-    }
+    // if (!ShoppingListCheckOffService.getBoughtItems().length > 0) {
+    //      buyList.boughtMessage =  "Nothing bought yet ";
+    // }
+    // if (!ShoppingListCheckOffService.getBoughtItems().length > 0) {
+    //      buyList.boughtMessage =  "Nothing bought yet ";
+    // }else{
+    //
+    //    buyList.boughtMessage =  ""
+    // }
+    //
+    // if (!buyList.items.length > 0) {
+    //   buyList.emptyMessage =  "Everything is bought!";
+    // }
 
 
 
@@ -65,6 +65,10 @@ function ShoppingListCheckOffService(){
        },
        {
          name: "Chocolate",
+         quantity: "5"
+       },
+       {
+         name: "Biscuit",
          quantity: "5"
        }
      ];
