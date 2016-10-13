@@ -10,9 +10,8 @@
  ToBuyController.$inject = ['ShoppingListCheckOffService'];
  function ToBuyController (ShoppingListCheckOffService){
     var buyList = this;
-    if (!ShoppingListCheckOffService.getBoughtItems().length > 0) {
-         buyList.boughtMessage =  "Nothing bought yet ";
-    }
+   buyList.boughtMessage =  "Nothing bought yet ";
+
 
 
     buyList.items = ShoppingListCheckOffService.getToBuyItems();
@@ -43,8 +42,6 @@
  function AlreadyBoughtController (ShoppingListCheckOffService){
     var boughtList = this;
 boughtList.items = ShoppingListCheckOffService.getBoughtItems();
-console.log(boughtList.items);
-
 
 
  }
